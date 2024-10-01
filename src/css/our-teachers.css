@@ -1,3 +1,60 @@
 div {
     display: block;
 }
+
+.teachers {
+    margin: 48px 20px;
+}
+
+.teachers-head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.teachers-caption {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: center;    
+    margin-bottom: 16px;
+}
+
+.teachers-underlined-text {
+    position: relative;
+  }
+  
+.teachers-underlined-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px; 
+    background-color: #BEE8CC; 
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.teachers-text {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #12141780;
+}
+
+.teacher-photo {
+    border-radius: 50%;
+}
+
+.teacher-name {
+    font-size: 20px;
+}
+
+.teachers-description {
+    font-size: 14px;
+    color: #12141780;
+}
