@@ -38,7 +38,7 @@ div {
     right: 0;
     height: 20px; 
     background-color: #BEE8CC; 
-    bottom: -5px;
+    bottom: -4px;
     z-index: -1;
     border-radius: 8px;
 }
@@ -123,6 +123,10 @@ div {
     .teachers-description {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .teachers-underlined-text::after {
+        bottom: 0px;
     }
     
 }
