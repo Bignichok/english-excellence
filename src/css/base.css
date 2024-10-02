@@ -13,3 +13,7 @@
   --underline-word: #BEE8CC;
   color: var(--black);
 }
+
+* {
+  box-sizing: border-box;
+}
