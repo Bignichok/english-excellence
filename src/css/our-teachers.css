@@ -1,3 +1,8 @@
+
+.teachers-container {
+    margin-top: 80px;
+}
+
 .teachers-head {
     display: flex;
     flex-direction: column;
@@ -29,8 +34,8 @@
     display: flex;
     max-width: 1024px;
     flex-direction: column;
-    row-gap: 20px;
     margin: 0 auto;
+    row-gap: 40px;
 }
 
 .teacher-card {
@@ -38,12 +43,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    row-gap: 20px;
-
 }
 
 .teacher-photo {
     border-radius: 50%;
+    margin-bottom: 16px;
 }
 
 .teacher-name {
@@ -52,6 +56,7 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.02em;
+    margin-bottom: 8px;
 }
 
 .teachers-description {
@@ -63,6 +68,15 @@
 }
 
 @media (min-width: 768px) {
+
+    .teachers-container {
+        margin-top: 100px;
+    }
+
+    .teachers-head {        
+        margin-bottom: 64px;
+    }
+
     .teachers-caption {
         font-size: 40px;
         line-height: 48px;
@@ -77,10 +91,12 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 32px;
+        justify-content: center;
     }
 
     .teacher-card {
-        width: calc((100% - 32px)/2);
+        width: 272px;
+        margin-bottom: 0px;
     }
 
     .teacher-name {
@@ -101,8 +117,13 @@
 
 
 @media (min-width: 1280px) {
+
+    .teachers-container {
+        margin-top: 150px;
+    }
+    
     .teacher-card {
-        width: calc((100% - (32px)*3)/4);
+        width: 232px;
     }
 
 }
