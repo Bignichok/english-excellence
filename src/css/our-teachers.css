@@ -1,10 +1,3 @@
-.teachers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 48px 20px;
-}
-
 .teachers-head {
     display: flex;
     flex-direction: column;
@@ -12,31 +5,14 @@
     margin-bottom: 40px;
 }
 
-
 .teachers-caption {
     font-family: Manrope;
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.02em;
-    text-align: center;    
+    text-align: center;
     margin-bottom: 16px;
-}
-
-.teachers-underlined-text {
-    position: relative;
-  }
-  
-.teachers-underlined-text::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 20px; 
-    background-color: var(--underline-word); 
-    bottom: -4px;
-    z-index: -1;
-    border-radius: 8px;
 }
 
 .teachers-text {
@@ -54,6 +30,7 @@
     max-width: 1024px;
     flex-direction: column;
     row-gap: 20px;
+    margin: 0 auto;
 }
 
 .teacher-card {
@@ -86,11 +63,6 @@
 }
 
 @media (min-width: 768px) {
-
-    .teachers {
-        margin: 32px 64px;
-    }
-
     .teachers-caption {
         font-size: 40px;
         line-height: 48px;
@@ -115,7 +87,7 @@
         font-size: 20px;
         line-height: 24px;
     }
-    
+
     .teachers-description {
         font-size: 16px;
         line-height: 24px;
@@ -124,7 +96,7 @@
     .teachers-underlined-text::after {
         bottom: 0px;
     }
-    
+
 }
 
 

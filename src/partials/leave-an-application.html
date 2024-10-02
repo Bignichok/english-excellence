@@ -1,1 +1,65 @@
-<section>Leave an application</section>
+<section id="leave-an-application">
+    <div class="container">
+        <h2 class="section-title">Leave an <span class="custom-underline">application</span></h2>
+        <p class="form-description">
+            Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
+            shortly.
+        </p>
+        <div class="form-holder">
+            <div class="form-decoration">
+                <picture>
+                    <source media="(min-width: 1280px)"
+                        srcset="./img/leave-an-application/form-image.png 1x, ./img/leave-an-application/form-image@2x.png 2x">
+                    <img src="./img/leave-an-application/form-image.png" alt="Girl">
+                </picture>
+                <p class="form-decoration-number">1000</p>
+                <p class="form-decoration-description">of our online English language lessons! This journey has been
+                    full of discovery, growth and unforgettable moments, and
+                    we are happy to share this joyful event with you.</p>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Name" class="form-input"
+                    pattern="^[a-zA-Zа-яА-ЯІіЇїЄєҐґ\s]+$" title="Name can contain only letters and spaces" required>
+
+                <input type="email" name="email" placeholder="Email" class="form-input"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Type correct email" required>
+
+                <input type="tel" name="phone" placeholder="Phone" class="form-input" pattern="\+?[0-9\s\-]{7,15}"
+                    title="phone should contain from 7 to 15 numbers" required>
+
+                <textarea name="comment" placeholder="Comment" class="form-textarea" required></textarea>
+
+                <div class="teacher-selection">
+                    <p>Choose a teacher</p>
+                    <div class="radio-holder">
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Maria" checked>
+                            <span class="checkmark"></span> Maria
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Artem">
+                            <span class="checkmark"></span> Artem
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Ilona">
+                            <span class="checkmark"></span> Ilona
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Volodymyr">
+                            <span class="checkmark"></span> Volodymyr
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="button">Send</button>
+
+                <p class="form-footer">
+                    By clicking on “Send” button, you agree to our <a href="#">Privacy Policy</a>, and allow Promodo to
+                    use
+                    this
+                    information for marketing purposes.
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
