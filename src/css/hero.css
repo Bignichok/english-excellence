@@ -73,7 +73,6 @@
 }
 
 .hero-arrow:hover .hero-arrow-link .icon-arrow-down{
-    background-color: var(--white);
     fill: var(--white);
 }
 
