@@ -17,11 +17,11 @@ section {
     }
 }
 
-.cutom-underline {
+.custom-underline {
     position: relative;
 }
 
-.cutom-underline::after {
+.custom-underline::after {
     position: absolute;
     bottom: 4px;
     left: 0;

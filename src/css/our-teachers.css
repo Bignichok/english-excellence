@@ -19,24 +19,8 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.02em;
-    text-align: center;    
+    text-align: center;
     margin-bottom: 16px;
-}
-
-.teachers-underlined-text {
-    position: relative;
-  }
-  
-.teachers-underlined-text::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 20px; 
-    background-color: var(--underline-word); 
-    bottom: -4px;
-    z-index: -1;
-    border-radius: 8px;
 }
 
 .teachers-text {
@@ -115,7 +99,7 @@
         font-size: 20px;
         line-height: 24px;
     }
-    
+
     .teachers-description {
         font-size: 16px;
         line-height: 24px;
@@ -124,7 +108,7 @@
     .teachers-underlined-text::after {
         bottom: 0px;
     }
-    
+
 }
 
 
