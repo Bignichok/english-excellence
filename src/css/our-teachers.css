@@ -1,7 +1,3 @@
-:root {
-    --underline-word: #BEE8CC;
-}
-
 .teachers {
     display: flex;
     flex-direction: column;

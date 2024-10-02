@@ -10,5 +10,6 @@
   --gray: rgba(243, 245, 246, 1);
   --dark-gray: rgba(18, 20, 23, 0.50);
   --white: rgba(255, 255, 255, 1);
+  --underline-word: #BEE8CC;
   color: var(--black);
 }
