@@ -1,3 +1,125 @@
 div {
     display: block;
 }
+
+.proposal-container{
+    padding: 40px 20px 64px 20px;
+    border-radius: 16px;
+    background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+}
+
+.proposal-title{
+    text-align: left;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.64px;
+    margin-bottom: 14px;
+}
+
+.proposal-motto{
+    text-align: left;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.05263;
+    margin-bottom: 40px;
+    color: var(--white);
+    max-width: 776px;
+
+}
+
+.proposal-motto span {
+    color: var(--light-green);
+
+}
+
+.proposal-first-card {
+    border-radius: 16px;
+    background-color: var(--white);
+    display: block;
+    padding: 16px;
+
+}
+
+.proposal-list-marker{
+    box-sizing: border-box;
+    background-color: var(--green);
+}
+
+/* list */
+
+.proposal-list{
+    padding: 24px;
+}
+
+.proposal-list ul>li {
+    clear: left;
+    padding: .5rem 0;
+}
+
+.proposal-list ul>li:before {
+    content: "";
+    height: 28px;
+    width: 28px;
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-left: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.proposal-list ul>li::before {
+
+    background: var(--green); 
+    background-image: url(./img/sprite.svg#check);
+    background-size: cover;
+    background-position: center;
+    padding: .15rem;
+}
+
+/* list */
+
+.proposal-button{
+    max-width: 306px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .proposal-container {
+        padding: 64px 18px 92px 18px;
+        border-radius: 30px;
+    }
+
+        .proposal-first-card {
+            border-radius: 30px;
+            background-color: var(--white);
+    
+        }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+                        .proposal-first-card {
+                            width: calc(100% - 64px * 2);
+                            padding: 64px 64px 142px 64px;
+                            border-radius: 30px;
+                            background-color: var(--white);
+            
+                        }
+
+                                                .proposal-motto {
+                                                    text-align: left;
+                                                    font-size: 60px;
+                                                    font-weight: 700;
+                                                    line-height: 1.67;
+                                                    margin-bottom: 40px;
+                                                    color: var(--white);
+                                                    max-width: 776px;
+                        
+                                                }
+
+}
