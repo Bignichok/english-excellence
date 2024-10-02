@@ -1,5 +1,5 @@
-div {
-    display: block;
+:root {
+    --underline-word: #BEE8CC;
 }
 
 .teachers {
@@ -37,7 +37,7 @@ div {
     left: 0;
     right: 0;
     height: 20px; 
-    background-color: #BEE8CC; 
+    background-color: var(--underline-word); 
     bottom: -4px;
     z-index: -1;
     border-radius: 8px;
@@ -50,7 +50,7 @@ div {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    color: #12141780;
+    color: var(--dark-gray);
 }
 
 .teachers-list {
@@ -86,7 +86,7 @@ div {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    color: #12141780;
+    color: var(--dark-gray);
 }
 
 @media (min-width: 768px) {
