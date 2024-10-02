@@ -1,3 +1,196 @@
-div {
-    display: block;
+
+/* footer begin */
+.footer {
+    padding: 100px 0;
 }
+.div-footer {
+    margin-left: 120px;
+    margin-right: 80px;
+}
+.footer {
+background-color: #2e2f42;
+/* padding: 100px 0; */
+padding: 96px 0;
+}
+.footer-logo {
+/* display: inline-block; */
+display: flex;
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4d5ae5;
+align-items: center;
+/* justify-content: flex-start; */
+justify-content: center;
+flex-direction: row;
+gap: 0px;
+margin-bottom: 16px;
+}
+.fotter-studio {
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #f4f4fd;
+}
+.footer-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+width: 264px;
+}
+.p-footer {
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 16px;
+}
+.media-link-list-footer {
+display: flex;
+align-items: center;
+}
+.a-link-footer {
+font-size: 0;
+padding: 12px;
+display: flex;
+border: 1px solid #F3F5F6; /* Додає 1px бордер */
+border-radius: 10%;
+align-items: center;
+justify-content: center;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+.icon-team-footer {
+fill: #F3F5F6;
+display: block;
+margin: 0 auto; /* Це допоможе додатково центрувати SVG */
+}
+
+.a-link-footer:hover .icon-team-footer,
+.a-link-footer:focus .icon-team-footer {
+fill: #BEE8CC; /* Зміна кольору іконки при фокусі або наведенні */
+}
+.a-link-footer:hover,
+.a-link-footer:focus {/* Зміна фону при фокусі або наведенні */
+border-color: #BEE8CC; /* Зміна кольору бордера при фокусі або наведенні */
+}
+
+.media-link-footer {
+display: flex;
+gap: 16px;
+}
+.fotter-container {
+/* margin-right: 120px; */
+margin-bottom: 72px;
+}
+.media-link-list-footer {
+height: 40px;
+width: 40px;
+display: flex;
+}
+.div-footer-container {
+display: flex;
+flex-wrap: wrap;
+/* flex-direction: row; */
+}
+.div-footer {
+/* display: flex;
+flex-direction: column; */
+margin: 0 auto 72px;
+/* margin-bottom: 72px; */
+}
+.footer .container {
+display: flex;
+align-items: baseline;
+}
+.form-footer {
+/* margin-left: 80px; */
+}
+.footer-subscribe {
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 16px;
+}
+.email-input {
+border: 1px solid #fff;
+  border-radius: 4px;
+  min-width: 288px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  letter-spacing: 0.04em;
+  line-height: 2;
+  font-size: 12px;
+  background-color: #2e2f42;
+  color:#fff;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+.form-label {
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+border: 1px solid #fff;
+border-radius: 4px;
+}
+.form-class {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+/* gap: 24px; */
+gap: 16px;
+}
+input::placeholder{
+color: #fff;
+}
+.subscribe-button {
+min-width: 165px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+cursor: pointer;
+background-color: #4d5ae5;
+border: none;
+border-radius: 4px;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+background-color: #404bbf;;
+}
+.subscribe-class {
+margin-left: 16px;
+fill: #fff;
+}
+
+
+
+/* footer end */

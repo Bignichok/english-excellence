@@ -1,3 +1,304 @@
-.footer {
-  padding: 20px 0;
+/* Загальні стилі для всіх екранів */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #1a1a1a;
+  color: white;
+  align-items: flex-start;
+}
+.footer-all {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #1a1a1a;
+  color: white;
+  align-items: flex-start;
+}
+
+/* Стиль для підписів "Phone number" та "Address" */
+.contact-info .label {
+  font-size: 1em;
+  font-weight: 400; /* Легкий шрифт для підпису */
+  color: #888888; /* Світло-сірий колір */
+  margin-bottom: 5px; /* Відступ між підписом і інформацією */
+  text-transform: none;
+}
+
+/* Стиль для номера телефону */
+.contact-info .phone-number {
+  font-size: 1em; /* Трохи більший розмір */
+  font-weight: 600; /* Напівжирний */
+  color: white; /* Білий колір */
+  text-decoration: none;
+  text-transform: none; /* Вимкнене підкреслення */
+}
+
+/* Стиль для адреси */
+.contact-info .address {
+  font-size: 1em; /* Трохи більший розмір */
+  font-weight: 600; /* Напівжирний */
+  color: white; /* Білий колір */
+  text-decoration: none;
+  text-transform: none; /* Вимкнене підкреслення */
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 30%;
+}
+
+.footer-logo h1 {
+  font-size: 2em; /* Збільшення розміру шрифту */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.footer-logo p {
+  margin: 10px 0;
+  font-size: 1em; /* Звичайний текст */
+}
+
+.footer-logo p a {
+  color: #31d0aa;
+  text-decoration: none;
+}
+
+.footer-logo p a:hover {
+  text-decoration: underline;
+}
+
+/* Якірні посилання */
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-bottom-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-bottom-links a {
+  color: gray; /* Колір успадковується від батьківського елемента */
+  text-decoration: none; /* Без підкреслення */
+}
+
+.footer-bottom-links a:hover {
+  color: gray; /* При наведенні колір не змінюється */
+  text-decoration: none; /* Без підкреслення при наведенні */
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: #31d0aa;
+}
+
+/* Соціальні мережі */
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.social-links li a:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-team-footer {
+  fill: #F3F5F6;
+  width: 28px;
+  height: 28px;
+}
+
+/* Нижня частина футера */
+.footer-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Вирівнювання елементів по різних сторонах */
+  align-items: center; /* Вертикальне вирівнювання */
+  padding: 10px 128px 10px 128px; /* Відступи */
+  background-color: #1a1a1a; /* Фоновий колір */
+  color: gray; /* Колір тексту */
+  font-size: 0.9em; /* Розмір тексту */
+}
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0; /* Розташування зверху елемента */
+  left: 128px; /* Відступ зліва (padding) */
+  right: 128px; /* Відступ справа (padding) */
+  height: 1px; /* Товщина лінії */
+  background-color: rgba(255, 255, 255, 0.1); /* Колір лінії */
+}
+
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .footer-logo {
+    align-items: left;
+    max-width: 100%;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.2em;
+}
+
+  .footer-links,
+  .social-links {
+    margin-top: 20px;
+    align-items: left;
+  }
+
+  
+  .footer-bottom {
+    flex-direction: column; /* Робимо елементи вертикальними */
+    align-items: flex-start; /* Центруємо елементи */
+    text-align: center; /* Центруємо текст */
+    padding: 20px; /* Менші відступи для мобільної версії */
+}
+
+.footer-bottom p {
+    margin-bottom: 10px; /* Відступ між копірайтом і посиланнями */
+}
+
+.footer-bottom a {
+    display: block;
+    margin-bottom: 5px; /* Відступи між посиланнями на політику */
+}
+
+
+.footer-bottom::before {
+  left: 20px; /* Менші відступи для border-top */
+  right: 20px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 10px; /* Проміжок між посиланнями */
+  margin-top: 10px; /* Відступ між текстом і посиланнями */
+}
+}
+
+/* Планшети (від 768px до 1280px) */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+
+  .footer-logo {
+    align-items: flex-start;
+    max-width: 40%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    justify-content: flex-end;
+  }
+
+  .footer-bottom {
+    padding: 10px 30px; /* Трохи менші відступи */
+    justify-content: space-between; /* Рівномірне розташування елементів */
+}
+
+.footer-bottom a {
+    margin-left: 10px; /* Менший відступ між посиланнями */
+}
+  .footer-logo h1 {
+    font-size: 1.5em;
+}
+
+.footer-bottom::before {
+    left: 30px; /* Відступи для border-top на планшетах */
+    right: 30px;
+}
+}
+
+/* Десктопи (від 1280px) */
+@media (min-width: 1280px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 128px;
+  }
+
+  .footer-logo {
+    align-items: flex-start;
+    max-width: 30%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    justify-content: flex-end;
+  }
+
+  .footer-bottom {
+    padding: 10px 128px 10px 128px; /* Більші відступи для просторих екранів */
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    margin-left: 20px; /* Більший відступ між посиланнями */
+}
+
+.footer-bottom::before {
+    left: 128px; /* Більші відступи для border-top на ноутбуках */
+    right: 128px;
+}
 }
