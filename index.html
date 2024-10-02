@@ -8,7 +8,7 @@
   <title>English excellence</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/english-excellence/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/english-excellence/assets/index-7pMVYi6o.css">
+  <link rel="stylesheet" crossorigin href="/english-excellence/assets/index-DhPv74O_.css">
 </head>
 
 <body>
@@ -28,15 +28,16 @@
 
     <section>Proposal to leave an application</section>
 
-    <section class="teachers">
-    <div class="teachers-head">
-        <h2 class="teachers-caption">Meet our <span class="teachers-underlined-text">teachers</span></h2>
-        <p class="teachers-text">
-            Discover our team of dedicated educators, committed to guiding you on your journey to English proficiency
-            with personalized and engaging instruction
-        </p>
-    </div>
-    <div class="teachers-cards-block">
+    <section>
+    <div class="container">
+        <div class="teachers-head">
+            <h2 class="teachers-caption">Meet our <span class="custom-underline">teachers</span></h2>
+            <p class="teachers-text">
+                Discover our team of dedicated educators, committed to guiding you on your journey to English
+                proficiency
+                with personalized and engaging instruction
+            </p>
+        </div>
         <ul class="teachers-list">
             <li class=teacher-card>
                 <picture>
@@ -78,7 +79,8 @@
                 <div class="teacher-card-text">
                     <h3 class="teacher-name">Ilona</h3>
                     <p class="teachers-description">
-                        A specialist in advanced English, Ilona provides intensive instruction, ensuring students gain
+                        A specialist in advanced English, Ilona provides intensive instruction, ensuring students
+                        gain
                         confidence in complex language tasks
                     </p>
                 </div>
@@ -93,7 +95,8 @@
                 <div class="teacher-card-text">
                     <h3 class="teacher-name">Volodymyr</h3>
                     <p class="teachers-description">
-                        Our expert in English for specific purposes, Volodymyr tailors his approach to meet individual
+                        Our expert in English for specific purposes, Volodymyr tailors his approach to meet
+                        individual
                         career and industry-specific language needs
                     </p>
                 </div>
@@ -102,7 +105,71 @@
     </div>
 </section>
 
-    <section>Leave an application</section>
+    <section id="leave-an-application">
+    <div class="container">
+        <h2 class="section-title">Leave an <span class="custom-underline">application</span></h2>
+        <p class="form-description">
+            Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
+            shortly.
+        </p>
+        <div class="form-holder">
+            <div class="form-decoration">
+                <picture>
+                    <source media="(min-width: 1280px)"
+                        srcset="/english-excellence/assets/form-image-CtcZN8c_.png 1x, /english-excellence/assets/form-image@2x-BZ8Iqt0X.png 2x">
+                    <img src="/english-excellence/assets/form-image-CtcZN8c_.png" alt="Girl">
+                </picture>
+                <p class="form-decoration-number">1000</p>
+                <p class="form-decoration-description">of our online English language lessons! This journey has been
+                    full of discovery, growth and unforgettable moments, and
+                    we are happy to share this joyful event with you.</p>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Name" class="form-input"
+                    pattern="^[a-zA-Zа-яА-ЯІіЇїЄєҐґ\s]+$" title="Name can contain only letters and spaces" required>
+
+                <input type="email" name="email" placeholder="Email" class="form-input"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Type correct email" required>
+
+                <input type="tel" name="phone" placeholder="Phone" class="form-input" pattern="\+?[0-9\s\-]{7,15}"
+                    title="phone should contain from 7 to 15 numbers" required>
+
+                <textarea name="comment" placeholder="Comment" class="form-textarea" required></textarea>
+
+                <div class="teacher-selection">
+                    <p>Choose a teacher</p>
+                    <div class="radio-holder">
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Maria" checked>
+                            <span class="checkmark"></span> Maria
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Artem">
+                            <span class="checkmark"></span> Artem
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Ilona">
+                            <span class="checkmark"></span> Ilona
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="teacher" value="Volodymyr">
+                            <span class="checkmark"></span> Volodymyr
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="button">Send</button>
+
+                <p class="form-footer">
+                    By clicking on “Send” button, you agree to our <a href="#">Privacy Policy</a>, and allow Promodo to
+                    use
+                    this
+                    information for marketing purposes.
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
 
     <section> Reviews</section>
 
