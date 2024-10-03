@@ -107,17 +107,6 @@
   fill: var(--green);
 }
 
-.mobile-menu-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 28px;
-  min-height: 28px;
-  padding: 0;
-  border: none;
-  /* background-color: transparent; */
-}
-
 @media screen and (min-width: 1280px) {
   .mobile-menu-btn {
     display: none;
