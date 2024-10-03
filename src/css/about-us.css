@@ -112,3 +112,23 @@
     right: 280px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .about-title::after {
+    top: 31px;
+    right: 531px;
+    width: 62px;
+    height: 20px;
+  }
+  .memoji-box {
+    width: 310px;
+    height: 352px;
+  }
+  .about-list-item {
+    width: 325px;
+  }
+
+  .wrap-list {
+    display: flex;
+  }
+}
