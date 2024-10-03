@@ -184,7 +184,7 @@
     flex-direction: column;
     align-items: left;
     text-align: left;
-    padding: 20px;
+    padding: 20px 40px 110px 20px;
   }
 
   .footer-logo {
@@ -193,7 +193,7 @@
   }
 
   .footer-logo h1 {
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
   .footer-links,
@@ -237,7 +237,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 32px 32px 110px 32px;
   }
 
   .footer-logo {
@@ -276,7 +276,7 @@
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 128px;
+    padding: 64px 128px;
   }
 
   .footer-logo {
