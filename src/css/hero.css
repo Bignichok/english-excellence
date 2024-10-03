@@ -58,11 +58,11 @@
     right: 14px;
     bottom: 14px;
     padding: 13px;
-    fill: var(--green);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-arrow-down {
+    fill: var(--green);
     height: 100%; 
     width: 100%;
 }
@@ -113,13 +113,20 @@
 
 @media (min-width: 1280px) {
     .hero-section {
+        width: 100%;
+        max-width: 1152px;
         height: 629px;
-        margin: 36px 64px 96px 64px;
-        background-image: url("./../img/hero/hero@2x.jpeg");
+        margin: 36px auto 96px auto;
         background-size: cover;
     }
 
     .hero-title {
         width: 564px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: url('./../img/hero/hero@2x.jpeg');
     }
 }
