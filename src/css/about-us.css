@@ -77,7 +77,36 @@
   margin: 0 auto;
   height: 313px;
   border-radius: 16px;
-  background: #4dc274;
+  background-color: #4dc274;
+}
+
+.emo-picture {
+  animation-name: memoji_anim;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+
+@keyframes memoji_anim {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translate(-130%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -123,6 +152,9 @@
 
   .about-list {
     width: 682px;
+    animation-name: translate;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
   }
 
   .memoji-box {
