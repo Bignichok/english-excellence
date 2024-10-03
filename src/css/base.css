@@ -3,14 +3,15 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  --black: rgba(18, 20, 23);
+  --black: rgb(18, 20, 23);
   --green: rgba(77, 194, 116, 1);
-  --green_linear: linear-gradient(85deg, rgba(77, 194, 116, 1) 2.25%, rgba(190, 232, 204, 1) 131.25%);
+  --dark-green: rgba(56, 174, 95, 1);
+  --green-linear: linear-gradient(85deg, rgba(77, 194, 116, 1) 2.25%, rgba(190, 232, 204, 1) 131.25%);
   --light-green: rgba(212, 253, 225, 1);
   --gray: rgba(243, 245, 246, 1);
   --dark-gray: rgba(18, 20, 23, 0.50);
   --white: rgba(255, 255, 255, 1);
-  --underline-word: #BEE8CC;
+  --underline-word: rgba(190, 232, 204, 1);
   color: var(--black);
 }
 
