@@ -1,7 +1,8 @@
 .hero-section {
     display: flex;
     flex-direction: column;
-    background-image: url("./../img/hero/hero.jpeg");
+    background-image: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%),
+        url("./../img/hero/hero.jpeg");
     background-repeat: no-repeat;
     background-position: 70% 50%;
     border-radius: 16px;
@@ -83,6 +84,7 @@
         justify-content: center;
         align-items: flex-start;
         background-position: 55% 50%;
+        border-radius: 30px;
 
     }
 
@@ -127,6 +129,7 @@
 
 @media screen and (min-resolution: 192dpi) {
     .hero-section {
-        background-image: url('./../img/hero/hero@2x.jpeg');
+        background-image: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%),
+            url('./../img/hero/hero@2x.jpeg');
     }
 }
