@@ -120,9 +120,16 @@
     width: 62px;
     height: 20px;
   }
+
+  .about-list {
+    width: 682px;
+  }
+
   .memoji-box {
+    margin: 0;
     width: 310px;
     height: 352px;
+    flex-shrink: 0;
   }
   .about-list-item {
     width: 325px;
@@ -130,5 +137,7 @@
 
   .wrap-list {
     display: flex;
+    justify-content: center;
+    gap: 32px;
   }
 }
