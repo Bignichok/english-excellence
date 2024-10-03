@@ -9,17 +9,18 @@
   color: #121417;
 }
 
-/* .about-title::after {
+.about-title::after {
   position: absolute;
-  top: 0;
-  right: 30%;
+  top: 26px;
+  right: 102px;
   content: '';
   display: block;
   width: 39px;
   height: 12px;
-  border-radius: 5px;
-  background-color: var(--light-green);
-} */
+  border-radius: 8px;
+  background-color: var(--underline-word);
+  z-index: -1;
+}
 
 .about-text {
   max-width: 334px;
@@ -102,5 +103,12 @@
     max-width: 704px;
     height: 243px;
     border-radius: 30px;
+  }
+
+  .about-title::after {
+    width: 52px;
+    height: 16px;
+    top: 35px;
+    right: 280px;
   }
 }
