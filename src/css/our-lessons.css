@@ -7,6 +7,7 @@
     letter-spacing: -0.02em;
     margin-bottom: 16px;
 }
+
 @media screen and (min-width: 768px) {
     .lessons-title {
         font-size: 40px;
@@ -24,6 +25,7 @@
     margin-bottom: 40px;
     color: var(--dark-gray);
 }
+
 @media screen and (min-width: 768px) {
     .lessons-desc {
         font-size: 18px;
@@ -39,12 +41,14 @@
     grid-template-columns: 1fr;
     max-width: 100%;
 }
+
 @media (min-width: 768px) {
     .plan-list {
         gap: 32px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (min-width: 1280px) {
     .plan-list {
         grid-template-columns: repeat(3, 1fr);
@@ -62,13 +66,88 @@
     border: 1px solid var(--green);
     border-radius: 30px;
     max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease;
 }
+
+.plan-content, 
+.plan .button {
+    transition: transform 0.4s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.plan:hover .plan-content, 
+.plan:hover .button {
+    transform: scale(1.01);
+}
+
+.glow-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.glow {
+    position: absolute;
+    width: 40%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    top: -50%;
+    left: -100%;
+    transform: rotate(45deg);
+    filter: blur(10px);
+    transition: none;
+    animation: none;
+    opacity: 0;
+}
+
+.plan:hover .glow {
+    animation: shine-left-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 0.1s;
+    opacity: 1;
+}
+
+.plan:not(:hover) .glow {
+    animation: shine-right-left 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 0.05s;
+    opacity: 1;
+}
+
+@keyframes shine-left-right {
+    0% {
+        left: -100%;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes shine-right-left {
+    0% {
+        left: 100%;
+        opacity: 1;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+}
+
 @media (min-width: 768px) {
     .plan {
         row-gap: 32px;
         padding: 32px 16px;
     }
 }
+
 @media (min-width: 1280px) {
     .plan {
         padding: 32px;
@@ -79,6 +158,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .plan-content h3 {
     margin-bottom: 16px;
     font-weight: 700;
@@ -86,6 +166,7 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
+
 .price {
     margin-bottom: 40px;
     font-weight: 700;
@@ -93,11 +174,13 @@
     line-height: 1.3;
     letter-spacing: -0.02em;
 }
+
 @media (min-width: 768px) {
     .price {
         margin-bottom: 32px;
     }
 }
+
 @media (min-width: 1280px) {
     .price {
         margin-bottom: 16px;
@@ -110,42 +193,12 @@
     line-height: 1.5;
     color: var(--dark-gray);
 }
+
 .accent .plan-desc {
     color: var(--white);
-}
-.apply-btn {
-    width: 100%;
-    padding: 14px;
-    background-color: var(--green);
-    color: var(--white);
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: 700;
-    line-height: 1.7;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.apply-btn:hover {
-    background-color: var(--dark-green);
-}
-@media screen and (min-width: 768px) {
-    .apply-btn {
-        padding: 16px;
-        font-size: 18px;
-        line-height: 1.5;
-    }
 }
 
 .accent {
     color: var(--white);
-    background-color: var( --green);
-}
-.accent .apply-btn {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-}
-.accent .apply-btn:hover {
-    background-color: var(--white);
-    color: var(--green);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--green);
 }
