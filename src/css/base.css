@@ -10,8 +10,11 @@
   --light-green: rgba(212, 253, 225, 1);
   --gray: rgba(243, 245, 246, 1);
   --dark-gray: rgba(18, 20, 23, 0.50);
+  --light-gray: rgba(255, 255, 255, 0.60);
   --white: rgba(255, 255, 255, 1);
+  --faint-white: rgba(255, 255, 255, 0.10);
   --underline-word: rgba(190, 232, 204, 1);
+  --ANIMATION: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--black);
 }
 
