@@ -79,3 +79,14 @@ section {
     background-color: var(--white);
     color: var(--green);
 }
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+}
+
+.logo span {
+    color: var(--green);
+}
