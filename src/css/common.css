@@ -52,6 +52,12 @@ section {
     cursor: pointer;
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: var(--dark-green);
+}
+
 @media screen and (min-width: 768px) {
     .button {
         font-size: 18px;

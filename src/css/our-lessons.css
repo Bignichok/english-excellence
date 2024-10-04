@@ -126,7 +126,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.apply-btn:hover {
+.apply-btn:hover,
+.apply-btn:focus,
+.apply-btn:active {
     background-color: var(--dark-green);
 }
 @media screen and (min-width: 768px) {
@@ -144,8 +146,9 @@
 .accent .apply-btn {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
-.accent .apply-btn:hover {
+.accent .apply-btn:hover,
+.accent .apply-btn:focus,
+.accent .apply-btn:active {
     background-color: var(--white);
     color: var(--green);
-    border: 1px solid rgba(255, 255, 255, 0.4);
 }
