@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.querySelector('.mobile-menu-button');
+    const menuButton = document.querySelector('.burger-menu');
     const menu = document.querySelector('.menu');
     const menuBackdrop = document.querySelector('.menu-backdrop');
     const closeMenuButton = document.querySelector('.close-menu-button');
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toogleMenu = () => {
         menu.classList.toggle('active');
         menuBackdrop.classList.toggle('active');
+        menuButton.classList.toggle('active');
     }
 
     menuButton.addEventListener('click', toogleMenu);
