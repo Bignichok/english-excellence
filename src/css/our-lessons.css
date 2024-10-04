@@ -66,6 +66,79 @@
     border: 1px solid var(--green);
     border-radius: 30px;
     max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.plan-content, 
+.plan .button {
+    transition: transform 0.4s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.plan:hover .plan-content, 
+.plan:hover .button {
+    transform: scale(1.01);
+}
+
+.glow-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.glow {
+    position: absolute;
+    width: 40%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    top: -50%;
+    left: -100%;
+    transform: rotate(45deg);
+    filter: blur(10px);
+    transition: none;
+    animation: none;
+    opacity: 0;
+}
+
+.plan:hover .glow {
+    animation: shine-left-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 0.1s;
+    opacity: 1;
+}
+
+.plan:not(:hover) .glow {
+    animation: shine-right-left 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 0.05s;
+    opacity: 1;
+}
+
+@keyframes shine-left-right {
+    0% {
+        left: -100%;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes shine-right-left {
+    0% {
+        left: 100%;
+        opacity: 1;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
 }
 
 @media (min-width: 768px) {
