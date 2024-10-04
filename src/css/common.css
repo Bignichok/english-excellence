@@ -113,3 +113,13 @@ section {
     fill: var(--green);
     border: 1px solid rgba(77, 194, 116, 0.10);
 }
+
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
