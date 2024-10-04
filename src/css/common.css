@@ -39,6 +39,7 @@ section {
 }
 
 .button {
+    display: block;
     width: 100%;
     padding: 14px;
     background-color: var(--green);
@@ -50,6 +51,8 @@ section {
     font-weight: 700;
     line-height: 24px;
     cursor: pointer;
+    transition: color var(--ANIMATION), background-color var(--ANIMATION);
+    text-align: center;
 }
 
 .button:hover,
@@ -66,16 +69,47 @@ section {
     }
 }
 
-.button.button_dark {
-    background-color: var(--dark-green);
-}
-
 .button.button_transparent {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.40);
 }
 
-.button.button_white {
+.button.button_transparent:hover,
+.button.button_transparent:focus,
+.button.button_transparent:active {
     background-color: var(--white);
     color: var(--green);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+}
+
+.logo span {
+    color: var(--green);
+}
+
+.social-meadia-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-meadia-links li a {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(18, 20, 23, 0.10);
+    transition: fill var(--ANIMATION);
+}
+
+.social-meadia-links li a:hover,
+.social-meadia-links li a:focus,
+.social-meadia-links li a:active {
+    fill: var(--green);
+    border: 1px solid rgba(77, 194, 116, 0.10);
 }
