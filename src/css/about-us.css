@@ -1,3 +1,175 @@
-div {
-    display: block;
+.about-title {
+  position: relative;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 32px;
+  text-transform: capitalize;
+  line-height: 1.125;
+  letter-spacing: -0.64px;
+  color: #121417;
+}
+
+.about-title::after {
+  position: absolute;
+  top: 26px;
+  right: 102px;
+  content: '';
+  display: block;
+  width: 39px;
+  height: 12px;
+  border-radius: 8px;
+  background-color: var(--underline-word);
+  z-index: -1;
+}
+
+.about-text {
+  max-width: 334px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.74;
+  color: var(--dark-gray);
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.about-list-item {
+  counter-increment: item;
+  max-width: 335px;
+  height: 160px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #f3f5f6;
+}
+
+.about-list-item::before {
+  content: '0' counter(item) '';
+  display: block;
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.56px;
+  color: #4dc274;
+}
+
+.about-item-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  color: #121417;
+}
+
+.memoji-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 335px;
+  margin: 0 auto;
+  height: 313px;
+  border-radius: 16px;
+  background-color: #4dc274;
+}
+
+.emo-picture {
+  animation-name: memoji_anim;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+
+@keyframes memoji_anim {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translate(-130%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+  .about-text {
+    max-width: 658px;
+    font-size: 18px;
+    margin-bottom: 64px;
+    line-height: 1.66;
+  }
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .memoji-box {
+    max-width: 704px;
+    height: 243px;
+    border-radius: 30px;
+  }
+
+  .about-title::after {
+    width: 52px;
+    height: 16px;
+    top: 35px;
+    right: 280px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-title::after {
+    top: 31px;
+    right: 531px;
+    width: 62px;
+    height: 20px;
+  }
+
+  .about-list {
+    width: 682px;
+    animation-name: translate;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+  }
+
+  .memoji-box {
+    margin: 0;
+    width: 310px;
+    height: 352px;
+    flex-shrink: 0;
+  }
+  .about-list-item {
+    width: 325px;
+  }
+
+  .wrap-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
 }
