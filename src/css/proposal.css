@@ -1,13 +1,10 @@
-div {
-    display: block;
-}
-
+/* #region Mobile */
 .proposal-container{
     padding: 40px 20px 64px 20px;
     border-radius: 16px;
     background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+    overflow: hidden;
 }
-
 .proposal-title{
     text-align: left;
     font-size: 32px;
@@ -15,9 +12,8 @@ div {
     font-weight: 700;
     line-height: 1.12;
     letter-spacing: -0.64px;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
 }
-
 .proposal-motto{
     text-align: left;
     font-size: 38px;
@@ -28,34 +24,49 @@ div {
     max-width: 776px;
 
 }
-
 .proposal-motto span {
     color: var(--light-green);
 
 }
-
-.proposal-first-card {
-    border-radius: 16px;
-    background-color: var(--white);
-    display: block;
-    padding: 16px;
-
+.card-wrapper{
+    position: relative;
 }
-
+.proposal-card {
+    position: relative;
+    border-radius: 16px;
+    top: 25px;
+    width: 100%;
+    height: 100%;
+}
+.third-card {
+    z-index: 3;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    min-width: 295px;
+    padding: 40px 20px;
+}
+.second-card {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-11deg);
+    background-color: var(--white);
+    opacity: 0.5;
+}
+.first-card {
+    position: absolute;
+    transform: rotate(9deg);
+    z-index: 2;
+    background-color: var(--light-green);
+}
 .proposal-list-marker{
     box-sizing: border-box;
     background-color: var(--green);
 }
 
-/* list */
-
-.proposal-list{
-    padding: 24px;
-}
-
 .proposal-list ul>li {
     clear: left;
-    padding: .5rem 0;
+    margin-bottom: 16px;
 }
 
 .proposal-list ul>li:before {
@@ -65,7 +76,7 @@ div {
     display: block;
     float: left;
     border-radius: 50%;
-    margin-left: 24px;
+    margin-right: 8px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -73,53 +84,146 @@ div {
 
 .proposal-list ul>li::before {
 
-    background: var(--green); 
-    background-image: url(./img/sprite.svg#check);
+    background-image: url("../img/check.svg");
     background-size: cover;
-    background-position: center;
-    padding: .15rem;
+    background-position: center center;
 }
 
-/* list */
+.proposal-list>ul {
+    margin-bottom: 20px;
+}
+
+.proposal-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42857;
+    letter-spacing: -0.02em;
+    color: var(--black);
+}
 
 .proposal-button{
     max-width: 306px;
 }
 
+/* #endregion */
+
+/* #region Tablet */
+
+
 @media screen and (min-width: 768px) {
 
-    .proposal-container {
-        padding: 64px 18px 92px 18px;
-        border-radius: 30px;
+.proposal-container {
+    padding: 64px 32px;
+    border-radius: 30px;
     }
 
-        .proposal-first-card {
-            border-radius: 30px;
-            background-color: var(--white);
-    
-        }
+.card-wrapper {
+    margin-bottom: 92px;
+}
+
+.proposal-motto {
+    margin-bottom: 32px;
+}
+
+.proposal-title {
+    margin-bottom: 32px;
+}
+
+.proposal-card {
+    top: 50px;
+    border-radius: 30px;
+}
+
+.second-card {
+    transform: rotate(-11deg);
+}
+
+.first-card {
+
+    transform: rotate(10deg);
+}
+
+.proposal-list>ul {
+    margin-bottom: 32px;
+    max-width: 450px;
+}
+
+.proposal-list ul>li:before {
+    margin-right: 16px;
+}
+
+.proposal-ill {
+    width: 214px;
+    height: 264px;
+    margin-right: -48px;
+    margin-top: 110px;
+    background-image: image-set(url('../img/proposal/books.png') 1x,
+                url('../img/proposal/books@2x.png') 2x);
+                background-size: cover;
+                background-repeat: no-repeat;
+}
+
+.proposal-description {
+    font-size: 20px;
+    line-height: 1.2;
+}
 
 }
+
+/* #endregion */
+
+/* #region Desktop */
 
 @media screen and (min-width: 1280px) {
 
-                        .proposal-first-card {
-                            width: calc(100% - 64px * 2);
-                            padding: 64px 64px 142px 64px;
-                            border-radius: 30px;
-                            background-color: var(--white);
-            
-                        }
+.proposal-container {
+        padding: 64px;
+        border-radius: 30px;
+    }
 
-                                                .proposal-motto {
-                                                    text-align: left;
-                                                    font-size: 60px;
-                                                    font-weight: 700;
-                                                    line-height: 1.67;
-                                                    margin-bottom: 40px;
-                                                    color: var(--white);
-                                                    max-width: 776px;
-                        
-                                                }
+.card-wrapper {
+    margin-bottom: 142px;
+}
+.third-card {
+    top: 60px;
+    padding: 64px;
+}
+
+.second-card {
+    transform: rotate(-11deg);
+}
+
+.first-card {
+
+    transform: rotate(8deg);
+}
+.proposal-motto {
+    text-align: left;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.16667;
+    margin-bottom: 72px;
+    color: var(--white);
+    max-width: 776px;
+}
+.proposal-title {
+    margin-bottom: 40px;
+}
+.proposal-list>ul {
+    margin-bottom: 40px;
+    max-width: 654px;
+}
+.proposal-ill {
+    width: 214px;
+    height: 264px;
+    margin-top: 64px;
+    background-image: image-set(url('../img/proposal/books.png') 1x,
+            url('../img/proposal/books@2x.png') 2x);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 }
+
+/* #endregion */
+
