@@ -61,11 +61,18 @@
     gap: 20px;
 }
 
+.mobile-nav-list li {
+    width: 100%;
+}
+
 .mobile-nav-list li a {
     color: var(--white);
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .close-menu-button {
