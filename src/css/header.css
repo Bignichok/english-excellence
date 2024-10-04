@@ -121,13 +121,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   .burger-menu-mobile-icon {
     display: none;
   }
   
   .burger-menu-tablet-icon {
     display: flex;
+    min-width: 40px;
+    min-height: 28px;
   }
 }
 
@@ -136,4 +137,3 @@
     display: none;
   }
 }
-
