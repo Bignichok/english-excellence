@@ -1,229 +1,232 @@
-/* #region Mobile */
-.proposal-container{
+@media screen and (min-width: 1280px) {
+    .proposal-container {
+        padding: 0 64px;
+    }
+}
+
+.proposal-content-holder {
     padding: 40px 20px 64px 20px;
     border-radius: 16px;
-    background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
-    overflow: hidden;
+    background: var(--green-linear);
+    position: relative;
+    z-index: 1;
 }
-.proposal-title{
-    text-align: left;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.12;
-    letter-spacing: -0.64px;
-    margin-bottom: 20px;
+
+@media screen and (min-width: 768px) {
+    .proposal-content-holder {
+        padding: 64px 18px 92px;
+    }
 }
-.proposal-motto{
-    text-align: left;
+
+@media screen and (min-width: 1280px) {
+    .proposal-content-holder {
+        padding: 64px 64px 141px;
+    }
+}
+
+.proposal-title {
+    color: var(--white);
     font-size: 38px;
     font-weight: 700;
-    line-height: 1.05263;
-    margin-bottom: 40px;
-    color: var(--white);
-    max-width: 776px;
-
+    line-height: 40px;
+    margin-bottom: 65px;
+    width: 295px;
 }
-.proposal-motto span {
-    color: var(--light-green);
 
+@media screen and (min-width: 768px) {
+    .proposal-title {
+        font-size: 60px;
+        line-height: 70px;
+        width: 640px;
+        margin-bottom: 83px;
+        padding: 0 14px;
+    }
 }
-.card-wrapper{
+
+@media screen and (min-width: 1280px) {
+    .proposal-title {
+        width: 776px;
+        margin-bottom: 134px;
+        padding: 0;
+    }
+}
+
+.proposal-title span {
+    color: var(--underline-word);
+}
+
+.proposal-card-holder {
     position: relative;
 }
-.proposal-card {
-    position: relative;
-    border-radius: 16px;
-    top: 25px;
-    width: 100%;
+
+.proposal-card-holder::before,
+.proposal-card-holder::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
     height: 100%;
-}
-.third-card {
-    z-index: 3;
-    background-color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    min-width: 295px;
-    padding: 40px 20px;
-}
-.second-card {
-    position: absolute;
-    z-index: 1;
-    transform: rotate(-11deg);
-    background-color: var(--white);
-    opacity: 0.5;
-}
-.first-card {
-    position: absolute;
-    transform: rotate(9deg);
-    z-index: 2;
-    background-color: var(--light-green);
-}
-.proposal-list-marker{
-    box-sizing: border-box;
-    background-color: var(--green);
+    width: 100%;
+    border-radius: 16px;
+    z-index: -1;
 }
 
-.proposal-list ul>li {
-    clear: left;
-    margin-bottom: 16px;
+.proposal-card-holder::before {
+    transform: rotate(-9deg);
+    background: var(--light-green);
 }
 
-.proposal-list ul>li:before {
-    content: "";
-    height: 28px;
-    width: 28px;
-    display: block;
-    float: left;
-    border-radius: 50%;
-    margin-right: 8px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+.proposal-card-holder::after {
+    transform: rotate(11deg);
+    background: rgba(255, 255, 255, 0.50);
 }
-
-.proposal-list ul>li::before {
-
-    background-image: url("../img/check.svg");
-    background-size: cover;
-    background-position: center center;
-}
-
-.proposal-list>ul {
-    margin-bottom: 20px;
-}
-
-.proposal-description {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.42857;
-    letter-spacing: -0.02em;
-    color: var(--black);
-}
-
-.proposal-button{
-    max-width: 306px;
-}
-
-/* #endregion */
-
-/* #region Tablet */
-
 
 @media screen and (min-width: 768px) {
 
-.proposal-container {
-    padding: 64px 32px;
-    border-radius: 30px;
-    }
-
-.card-wrapper {
-    margin-bottom: 92px;
-}
-
-.proposal-motto {
-    margin-bottom: 32px;
-}
-
-.proposal-title {
-    margin-bottom: 32px;
-}
-
-.proposal-card {
-    top: 50px;
-    border-radius: 30px;
-}
-
-.second-card {
-    transform: rotate(-11deg);
-}
-
-.first-card {
-
-    transform: rotate(10deg);
-}
-
-.proposal-list>ul {
-    margin-bottom: 32px;
-    max-width: 450px;
-}
-
-.proposal-list ul>li:before {
-    margin-right: 16px;
-}
-
-.proposal-ill {
-    width: 214px;
-    height: 264px;
-    margin-right: -48px;
-    margin-top: 110px;
-    background-image: image-set(url('../img/proposal/books.png') 1x,
-                url('../img/proposal/books@2x.png') 2x);
-                background-size: cover;
-                background-repeat: no-repeat;
-}
-
-.proposal-description {
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-}
-
-/* #endregion */
-
-/* #region Desktop */
-
-@media screen and (min-width: 1280px) {
-
-.proposal-container {
-        padding: 64px;
+    .proposal-card-holder::before,
+    .proposal-card-holder::after {
         border-radius: 30px;
     }
 
-.card-wrapper {
-    margin-bottom: 142px;
-}
-.third-card {
-    top: 60px;
-    padding: 64px;
+    .proposal-card-holder::before {
+        transform: rotate(-9.864deg);
+    }
+
+    .proposal-card-holder::after {
+        transform: rotate(10.655deg);
+    }
 }
 
-.second-card {
-    transform: rotate(-11deg);
+@media screen and (min-width: 1280px) {
+    .proposal-card-holder::before {
+        transform: rotate(-8deg);
+    }
+
+    .proposal-card-holder::after {
+        transform: rotate(11deg);
+    }
 }
 
-.first-card {
-
-    transform: rotate(8deg);
+.proposal-card {
+    border-radius: 16px;
+    padding: 40px 20px;
+    background: var(--white);
 }
-.proposal-motto {
-    text-align: left;
-    font-size: 60px;
+
+@media screen and (min-width: 768px) {
+    .proposal-card {
+        border-radius: 30px;
+        padding: 64px 32px;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .proposal-card {
+        padding: 64px;
+    }
+}
+
+.proposal-card-title {
+    font-size: 20px;
     font-weight: 700;
-    line-height: 1.16667;
-    margin-bottom: 72px;
-    color: var(--white);
-    max-width: 776px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    margin-bottom: 20px;
 }
-.proposal-title {
-    margin-bottom: 40px;
+
+@media screen and (min-width: 768px) {
+    .proposal-card-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.8px;
+        margin-bottom: 32px;
+    }
 }
-.proposal-list>ul {
-    margin-bottom: 40px;
-    max-width: 654px;
+
+.proposal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
 }
-.proposal-ill {
-    width: 214px;
-    height: 264px;
-    margin-top: 64px;
-    background-image: image-set(url('../img/proposal/books.png') 1x,
-            url('../img/proposal/books@2x.png') 2x);
-    background-size: cover;
+
+@media screen and (min-width: 768px) {
+    .proposal-list {
+        margin-bottom: 32px;
+        width: 452px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .proposal-list {
+        margin-bottom: 40px;
+        width: 654px;
+    }
+}
+
+.proposal-list li {
+    position: relative;
+    padding-left: 44px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+}
+
+@media screen and (min-width: 768px) {
+    .proposal-list li {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+    }
+}
+
+.proposal-list li::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-image: url("../img/check.svg");
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
+@media screen and (min-width: 768px) {
+    .proposal-list li::before {
+        height: 28px;
+        width: 28px;
+    }
 }
 
-/* #endregion */
+.proposal-button {
+    max-width: 306px;
+}
 
+@media screen and (min-width: 768px) {
+    .proposal-card::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 214px;
+        height: 264px;
+        background: image-set(url('../img/proposal/books.png') 1x, url('../img/proposal/books@2x.png') 2x);
+        top: 172px;
+        right: -50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .proposal-card::after {
+        top: 132px;
+        right: 0;
+    }
+}
