@@ -18,7 +18,7 @@
 }
 
 .hero-container {
-    background-image: image-set(url("./../img/hero/hero-mobile.png") 1x, url("./../img/hero/hero-mobile@2x.png") 2x);
+    background: linear-gradient(357deg, rgba(0, 0, 0, 0.40) 39.23%, rgba(0, 0, 0, 0.00) 66.28%), url("./../img/hero/hero.jpeg") lightgray -566px -29.886px / 332.537% 104.761%;
     background-repeat: no-repeat;
     border-radius: 16px;
     height: 709px;
@@ -87,7 +87,7 @@
         justify-content: center;
         background-size: cover;
         border-radius: 30px;
-        background-image: image-set(url("./../img/hero/hero-tablet.png") 1x, url("./../img/hero/hero-tablet@2x.png") 2x);
+        background: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%), url("./../img/hero/hero.jpeg") lightgray -256px -12.887px / 186.364% 102.074%;
     }
 
     .hero-title {
@@ -122,10 +122,28 @@
         min-width: 1152px;
         padding: 0 64px;
         border-radius: 30px;
-        background-image: image-set(url("./../img/hero/hero-desktop.png") 1x, url("./../img/hero/hero-desktop@2x.png") 2x);
+        background: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%), url("./../img/hero/hero.jpeg") lightgray 0px -122.887px / 113.889% 139.074% no-repeat;
     }
 
     .hero-title {
         width: 564px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-container {
+        background: linear-gradient(357deg, rgba(0, 0, 0, 0.40) 39.23%, rgba(0, 0, 0, 0.00) 66.28%), url("./../img/hero/hero@2x.jpeg") lightgray -566px -29.886px / 332.537% 104.761%;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+    .hero-container {
+        background: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%), url("./../img/hero/hero@2x.jpeg") lightgray -256px -12.887px / 186.364% 102.074%;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px) {
+    .hero-container {
+        background: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%), url("./../img/hero/hero@2x.jpeg") lightgray 0px -122.887px / 113.889% 139.074% no-repeat;
     }
 }
