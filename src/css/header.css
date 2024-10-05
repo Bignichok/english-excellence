@@ -40,16 +40,19 @@
 .header-nav-link::after {
   content: '';
   display: block;
+  position: absolute;
   left: 0;
   bottom: -4px;
-  width: 100%;
+  width: 0;
   height: 2px;
   background: transparent;
+  transition: width var(--ANIMATION), background var(--ANIMATION);
 }
 
 .header-nav-link:hover::after,
 .header-nav-link:focus::after {
   background: var(--green);
+  width: 37px;
 }
 
 header .social-meadia-links {
@@ -65,8 +68,8 @@ header .social-meadia-links {
 }
 
 .burger-menu {
-  width: 40px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,6 +77,13 @@ header .social-meadia-links {
   border: none;
   cursor: pointer;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    width: 40px;
+    height: 28px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
