@@ -1,11 +1,30 @@
 .hero-section {
+    padding-top: 8px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        padding-top: 32px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero-section {
+        padding-top: 16px;
+        padding-bottom: 21px;
+    }
+}
+
+.hero-container {
     background: linear-gradient(357deg, rgba(0, 0, 0, 0.40) 39.23%, rgba(0, 0, 0, 0.00) 66.28%), url("./../img/hero/hero.jpeg") lightgray -566px -29.886px / 332.537% 104.761%;
     background-repeat: no-repeat;
     border-radius: 16px;
     height: 709px;
     position: relative;
     padding: 425px 20px 72px;
-    margin: 8px auto 80px;
+    margin: 0 auto;
     max-width: 335px;
 }
 
@@ -21,7 +40,7 @@
     color: var(--underline-word)
 }
 
-.hero-section .button {
+.hero-container .button {
     width: 295px;
 }
 
@@ -59,7 +78,7 @@
 }
 
 @media (min-width: 768px) {
-    .hero-section {
+    .hero-container {
         height: 857px;
         min-width: 704px;
         padding: 0 32px;
@@ -78,7 +97,7 @@
         margin-bottom: 32px;
     }
 
-    .hero-section .button {
+    .hero-container .button {
         width: 306px;
     }
 
@@ -98,7 +117,7 @@
 
 
 @media (min-width: 1280px) {
-    .hero-section {
+    .hero-container {
         height: 629px;
         min-width: 1152px;
         padding: 0 64px;
@@ -112,19 +131,19 @@
 }
 
 @media screen and (min-resolution: 192dpi) {
-    .hero-section {
+    .hero-container {
         background: linear-gradient(357deg, rgba(0, 0, 0, 0.40) 39.23%, rgba(0, 0, 0, 0.00) 66.28%), url("./../img/hero/hero@2x.jpeg") lightgray -566px -29.886px / 332.537% 104.761%;
     }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
-    .hero-section {
+    .hero-container {
         background: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%), url("./../img/hero/hero@2x.jpeg") lightgray -256px -12.887px / 186.364% 102.074%;
     }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px) {
-    .hero-section {
+    .hero-container {
         background: linear-gradient(96deg, rgba(0, 0, 0, 0.40) 36.36%, rgba(0, 0, 0, 0.00) 51.43%), url("./../img/hero/hero@2x.jpeg") lightgray 0px -122.887px / 113.889% 139.074% no-repeat;
     }
 }

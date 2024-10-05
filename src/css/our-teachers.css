@@ -1,8 +1,3 @@
-
-.teachers-container {
-    margin-top: 80px;
-}
-
 .teachers-head {
     display: flex;
     flex-direction: column;
@@ -68,12 +63,7 @@
 }
 
 @media (min-width: 768px) {
-
-    .teachers-container {
-        margin-top: 100px;
-    }
-
-    .teachers-head {        
+    .teachers-head {
         margin-bottom: 64px;
     }
 
@@ -117,11 +107,6 @@
 
 
 @media (min-width: 1280px) {
-
-    .teachers-container {
-        margin-top: 150px;
-    }
-    
     .teacher-card {
         width: 232px;
     }
