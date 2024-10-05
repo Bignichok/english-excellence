@@ -102,6 +102,11 @@ header .social-meadia-links {
   transition: transform var(--ANIMATION), opacity var(--ANIMATION);
 }
 
+.burger-menu span:nth-child(2) {
+  width: 75%;
+  align-self: flex-end;
+}
+
 .burger-menu.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
